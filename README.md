@@ -6,14 +6,14 @@ to other platform.
 Example - Publish with Mosquitto
 
 File: publish_temp.sh
-
+<blockquote>
 #!/bin/ash
 while :
 do
         mosquitto_pub -h iot.eclipse.org -p 1883 -t project4fun/temp -m "`date` - `./lm75` C"
         sleep 1
 done
-
+</blockquote>
 Example - Subscribe with Mosquitto
 
 mosquitto_sub -h iot.eclipse.org -p 1883 -t project4fun/temp
