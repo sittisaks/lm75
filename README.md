@@ -7,12 +7,12 @@ Example - Publish with Mosquitto
 
 File: publish_temp.sh
 <blockquote>
-#!/bin/ash<p>
-while :<p>
-do<p>
-        mosquitto_pub -h iot.eclipse.org -p 1883 -t project4fun/temp -m "`date` - `./lm75` C"<p>
-        sleep 1<p>
-done<p>
+#!/bin/ash<br>
+while :<br>
+do<br>
+        mosquitto_pub -h iot.eclipse.org -p 1883 -t project4fun/temp -m "`date` - `./lm75` C"<br>
+        sleep 1<br>
+done<br>
 </blockquote>
 Example - Subscribe with Mosquitto
 
